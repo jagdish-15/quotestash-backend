@@ -38,4 +38,20 @@ router.post("/", (req, res) => {
     });
 });
 
+router.get("/", (req, res) => {
+    fs.readFile(donationsFilePath, "utf8", (err, data) => {
+        if (err) {
+            console.error("Error reading donations file:", err);
+            return res.status(500).json({ error: "Server error" });
+        }
+
+        try {
+            const donations = JSON.parse(data);
+            res.status(200).json(donations);
+        } catch (parseErr) {
+            res.status(500).json({ error: "Error parsing donations" });
+        }
+    });
+});
+
 module.exports = router;
