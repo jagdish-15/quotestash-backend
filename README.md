@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the backend server powering the [QuoteStash](https://jagdish-15.github.io/QuoteStash/index.html) web application. It displays random inspirational quotes and supports user donations via UPI. The backend stores donation data and is containerized for deployment.
+This is the backend server powering the [QuoteStash](https://jagdish-15.github.io/QuoteStash/index.html) web application. It displays random inspirational quotes and supports user donations via UPI. The backend stores donations data and is containerized for deployment.
 
 ## Features
 
