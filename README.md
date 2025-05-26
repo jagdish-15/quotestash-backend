@@ -9,7 +9,7 @@ This is the backend server powering the [QuoteStash](https://jagdish-15.github.i
 - Accepts donation data from frontend
 - Validates and stores donation metadata (name, email, phone, amount, UPI ID suffix)
 - Sends response to confirm successful data reception
-- Containerized for scalable deployment (e.g., Railway)
+- Containerized for scalable deployment (currently using Render with UptimeRobot)
 
 ## Technologies Used
 
